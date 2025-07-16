@@ -21,7 +21,7 @@ if uploaded_file is not None:
 
     st.write(f"✅ Loaded **{len(usernames)} usernames**")
 
-    num_lines = st.number_input("Number of lines", min_value=1, max_value=100000, value=5)
+    num_lines = st.number_input("Number of accounts that gonna perform follow task", min_value=1, max_value=100000, value=5)
     usernames_per_line = st.number_input("Usernames per line", min_value=1, max_value=1000, value=2)
 
     if st.button("Format and Download"):
